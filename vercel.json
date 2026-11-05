@@ -7,15 +7,15 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://01a19816-4d51-7d6f-a071-24da6f6cec3e-8080.eur-1.aiven.app/api/:path*"
+      "destination": "https://01a1ab11-6566-7f38-9592-0303c12c9eb6-8080.eur-1.aiven.app/api/:path*"
     },
     {
       "source": "/api-docs.html",
-      "destination": "https://01a19816-4d51-7d6f-a071-24da6f6cec3e-8080.eur-1.aiven.app/api-docs.html"
+      "destination": "https://01a1ab11-6566-7f38-9592-0303c12c9eb6-8080.eur-1.aiven.app/api-docs.html"
     },
     {
       "source": "/openapi.json",
-      "destination": "https://01a19816-4d51-7d6f-a071-24da6f6cec3e-8080.eur-1.aiven.app/openapi.json"
+      "destination": "https://01a1ab11-6566-7f38-9592-0303c12c9eb6-8080.eur-1.aiven.app/openapi.json"
     }
   ],
   "headers": [

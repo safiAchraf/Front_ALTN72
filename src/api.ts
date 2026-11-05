@@ -1,5 +1,5 @@
 export class ApiError extends Error {
-  constructor(public status: number, message: string) { super(message); }
+  constructor(public status: number, message: string, public code?: string) { super(message); }
 }
 let csrf: { token: string; headerName: string } | undefined;
 export async function token() {
@@ -19,7 +19,7 @@ export async function api<T>(path: string, method = 'GET', body?: unknown): Prom
   if (!response.ok) {
     const data = await response.json().catch(() => ({}));
     if (response.status === 401 && path !== '/connexion' && path !== '/session') window.dispatchEvent(new Event('session-expired'));
-    throw new ApiError(response.status, data.message || `La demande a échoué (${response.status}).`);
+    throw new ApiError(response.status, data.message || `La demande a échoué (${response.status}).`, data.code);
   }
   if (response.status === 204) return undefined as T;
   return response.json();

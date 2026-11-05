@@ -71,3 +71,9 @@ a { color: var(--accent); text-decoration: none; }
 .login-card { border-color: #dfebe3; box-shadow: 0 20px 70px #153b2910; border-radius: 18px; }.login-card .brand { margin: 0 0 38px; }.login-card .brand-logo { width: 240px; max-width: 100%; }.login-card h2 { color: var(--navy); }
 @media(max-width:1000px) { .brand-logo { max-width: 170px; }.sidebar { width: 210px; }.login-card { padding: 32px; }.login-intro { padding-left: 9%; padding-right: 9%; } }
 @media(max-width:700px) { .sidebar { width: 100%; }.sidebar .brand { padding: 0; margin: 0 0 18px 5px; }.brand-logo { width: 165px; }.login-intro { display: none; }.login-card .brand-logo { width: 220px; }.nav-item { border-radius: 7px; }.nav-item.active { box-shadow: inset 0 -2px var(--teal); } }
+
+.surveillance-confirm { margin: 14px 0; padding: 14px; border: 1px solid #e7b45b; border-radius: 10px; background: #fff8e9; color: #704612; }
+.surveillance-confirm p { margin: 0 0 12px; }
+.confirmation-checkbox { display: flex; flex-direction: row; align-items: flex-start; gap: 10px; margin-top: 0; cursor: pointer; }
+.confirmation-checkbox input { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 2px; padding: 0; }
+.surveillance-badge { color: #8b4b0f; font-weight: 600; }
